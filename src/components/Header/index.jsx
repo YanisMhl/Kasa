@@ -1,9 +1,6 @@
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
-const linkStyle = {
-    "text-decoration": "none"
-};
 
 function Header() {
     return (

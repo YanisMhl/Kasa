@@ -5,6 +5,7 @@ import Card from '../../components/Card';
 
 function Home() {
     const [logements, setLogements] = useState([]);
+    
     useEffect(() => {
         getLogements().then((data) => setLogements(data));
     }, []);

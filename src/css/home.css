@@ -50,6 +50,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 50px;
+  background: #F6F6F6;
+  border-radius: 25px;
+  padding: 50px;
 }
 
 .card {
@@ -58,6 +61,7 @@
   width: 340px;
   height: 340px;
   border-radius: 20px;
+  cursor: pointer;
 }
 .card p {
   color: white;

@@ -1,4 +1,11 @@
 @import '../utils/global';
 @import '../utils/variables';
 @import '../components/header';
+@import '../components/banner';
 @import '../components/footer';
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

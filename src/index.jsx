@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
-import A_propos from './pages/A-propos';
+import APropos from './pages/A-propos';
 
 import './css/home.css';
 
@@ -19,7 +19,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/a-propos' element={<A_propos />} />
+        <Route path='/a-propos' element={<APropos />} />
       </Routes>
       <Footer />
     </Router>

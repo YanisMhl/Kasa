@@ -1,11 +1,11 @@
 import Banner from '../../components/Banner';
 
-function A_propos() {
+function APropos() {
     return (
         <div className='a-propos'>
-            <Banner />
+            <Banner background={'/a-propos-banner-img.png'}/>
         </div>
     );
 }
 
-export default A_propos;
+export default APropos;

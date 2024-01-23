@@ -12,7 +12,7 @@ function Home() {
 
     return (
         <div className="home">
-            <Banner />
+            <Banner title={"Chez vous, partout et ailleurs"} background={'/home-banner-img.png'}/>
             <div className='card-container'>
                 {logements.map((logement) => (
                     <Card

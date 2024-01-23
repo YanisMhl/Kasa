@@ -6,10 +6,10 @@ function APropos() {
     return (
         <div className='a-propos'>
             <Banner background={'/a-propos-banner-img.png'}/>
-            <Dropdown title="Fiabilité" content={contentTab}/>
-            <Dropdown title="Respect" content={contentTab}/>
-            <Dropdown title="Service" content={contentTab}/>
-            <Dropdown title="Sécurité" content={contentTab}/>
+            <Dropdown title="Fiabilité" content={contentTab} size='large'/>
+            <Dropdown title="Respect" content={contentTab} size='large'/>
+            <Dropdown title="Service" content={contentTab} size='large'/>
+            <Dropdown title="Sécurité" content={contentTab} size='large'/>
         </div>
     );
 }

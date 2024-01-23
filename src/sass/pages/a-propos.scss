@@ -1,6 +1,7 @@
 @import '../utils/global';
 @import '../utils/variables';
 @import '../components/header';
+@import '../components/dropdown';
 @import '../components/banner';
 @import '../components/footer';
 
@@ -8,4 +9,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }

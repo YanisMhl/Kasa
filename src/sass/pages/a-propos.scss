@@ -1,0 +1,11 @@
+@import '../utils/global';
+@import '../utils/variables';
+@import '../components/header';
+@import '../components/banner';
+@import '../components/footer';
+
+.a-propos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

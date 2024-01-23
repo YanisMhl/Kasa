@@ -15,7 +15,7 @@ function Dropdown({ title, content, size }) {
                 <p>{title}</p>
                 <FontAwesomeIcon icon={faChevronUp} className={`dropdown-icon ${open ? 'rotate' : ''}`} size='xl' onClick={toggleDropdown} />
             </div>
-            <div className="dropdown-content" style={{display: open ? 'block' : 'none' }}>
+            <div className={`dropdown-content ${open ? 'slides' : ''}`}>
                 {content.map((item, index) => (
                     <p key={`dropdown-item-${index}`}
                     className="dropdown-item">{item}</p>

@@ -1,5 +1,6 @@
 .dropdown {
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .dropdown-title {
@@ -17,13 +18,26 @@
 .dropdown-content {
     background: $bg-color;
     color: $main-color;
+    position: relative;
     font-size: 18px;
-    padding: 20px;
+    max-height: 0;
+    transition: all 0.3s ease-in;
+ 
+}
+.slides {
+    max-height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 .dropdown-icon {
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+.dropdown-item {
+    margin-left: 20px; 
 }
 
 .rotate {

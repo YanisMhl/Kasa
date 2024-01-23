@@ -30,11 +30,14 @@
 
 .dropdown-title {
   display: flex;
+  align-items: center;
   background: #FF6060;
   padding: 10px 20px 10px 10px;
   border-radius: 5px;
   gap: 100px;
   color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .dropdown-content {
@@ -42,6 +45,15 @@
   color: #FF6060;
   font-size: 18px;
   padding: 20px;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(-180deg);
 }
 
 .banner {

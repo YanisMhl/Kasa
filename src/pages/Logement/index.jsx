@@ -1,9 +1,12 @@
+import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 
 function Logement() {
+    const { logementId } = useParams();
+
     return (
         <div className="logement">
-            <Carousel id='c67ab8a7'/>
+            <Carousel id={logementId}/>
         </div>
     );
 }

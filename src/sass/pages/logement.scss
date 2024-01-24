@@ -1,0 +1,12 @@
+@import '../utils/global';
+@import '../utils/variables';
+@import '../components/header';
+@import '../components/carousel';
+@import '../components/footer';
+
+.logement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

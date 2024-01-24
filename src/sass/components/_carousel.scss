@@ -1,0 +1,29 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 1240px;
+    min-height: 680px;
+    position: relative;
+
+    .arrows {
+        color: white;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 40%;
+    }
+
+    .arrow-left, .arrow-right {
+        cursor: pointer;
+    }
+
+    p {
+        color: white;
+        margin-bottom: 25px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

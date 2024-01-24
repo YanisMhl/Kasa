@@ -28,10 +28,15 @@ function Carousel({ id }) {
     }
 
     return (
-        <div className="carousel" style={{background: `url(${pictures[pictureIndex]})`}}>
+        <div className="carousel" style={{
+            background: `url(${pictures[pictureIndex]})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center center'
+            }}>
             <div className="arrows">
-                <FontAwesomeIcon icon={faChevronLeft} className="arrow-left" onClick={() => changePictureIndex('left')}/>
-                <FontAwesomeIcon icon={faChevronRight} className="arrow-right" onClick={() => changePictureIndex('right')}/>
+                <FontAwesomeIcon icon={faChevronLeft} size="6x" className="arrow-left" onClick={() => changePictureIndex('left')}/>
+                <FontAwesomeIcon icon={faChevronRight} size="6x" className="arrow-right" onClick={() => changePictureIndex('right')}/>
             </div>
             <p>{`${pictureIndex + 1}/${pictures.length}`}</p>
         </div>

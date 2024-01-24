@@ -9,7 +9,7 @@ function Carousel({ id }) {
 
     useEffect(() => {
         getPictures(id).then((response) => setPictures(response));
-    }, [])
+    }, []);
 
     function changePictureIndex(arrow) {
         if (arrow === 'left') {
@@ -30,8 +30,8 @@ function Carousel({ id }) {
     return (
         <div className="carousel" style={{background: `url(${pictures[pictureIndex]})`}}>
             <div className="arrows">
-                <FontAwesomeIcon icon={faChevronLeft} className="arrow-left" onClick={changePictureIndex('left')}/>
-                <FontAwesomeIcon icon={faChevronRight} className="arrow-right" onClick={changePictureIndex('right')}/>
+                <FontAwesomeIcon icon={faChevronLeft} className="arrow-left" onClick={() => changePictureIndex('left')}/>
+                <FontAwesomeIcon icon={faChevronRight} className="arrow-right" onClick={() => changePictureIndex('right')}/>
             </div>
             <p>{`${pictureIndex + 1}/${pictures.length}`}</p>
         </div>

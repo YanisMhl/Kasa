@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel";
+import Dropdown from "../../components/Dropdown";
 import '../../css/logement.css';
 import { getSingleLogement } from "../../services/get_data";
 import { useEffect, useState } from "react";
@@ -38,6 +39,10 @@ function Logement() {
                     {logementInfo.rating ? Array(5).fill().map((_, index) => (
                         <FontAwesomeIcon key={index} icon={index + 1 <= parseInt(logementInfo.rating) ? solidStar : regularStar} />
                     )) : ''}
+                </div>
+                <div className="dropdowns">
+                    <Dropdown title="Description" content={logementInfo.description ? [logementInfo.description] : []} />
+                    <Dropdown title="Equipements" content={logementInfo.equipments ? logementInfo.equipments : []} />
                 </div>
             </div>
         </div>

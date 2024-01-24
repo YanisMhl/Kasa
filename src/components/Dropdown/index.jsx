@@ -20,7 +20,8 @@ function Dropdown({ title, content, size = 'medium'}) {
             </div>
             <div className={`dropdown-content ${open ? 'slides' : ''}`}
             style={{width: dropdownWidth}}>
-                {content.map((item, index) => (
+                {typeof(content) === String ? <p>{content}</p> :
+                content.map((item, index) => (
                     <p key={`dropdown-item-${index}`}
                     className="dropdown-item">{item}</p>
                 ))}

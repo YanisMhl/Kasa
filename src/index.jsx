@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import APropos from './pages/A-propos';
+import Error from './pages/Error';
 
 import './css/home.css';
 import './css/a-propos.css';
@@ -21,6 +22,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/a-propos' element={<APropos />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>

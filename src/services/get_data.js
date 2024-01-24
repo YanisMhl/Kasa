@@ -14,3 +14,15 @@ export async function getPictures(id) {
     throw new Error();
   }
 }
+
+export async function getSingleLogement(id) {
+  const response = await fetch("/data/logements.json");
+  const data = await response.json();
+  const result = data.find((element) => element.id === id);
+  if (result) {
+    console.log(result);
+    return result;
+  } else {
+    throw new Error();
+  }
+}

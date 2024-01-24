@@ -71,7 +71,61 @@ footer p {
 
 .logement {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 50px;
+}
+.logement .info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  color: #FF6060;
+  width: 1240px;
+}
+.logement .info-row-1, .logement .info-row-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.logement .title h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.logement .title p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.logement .host {
+  display: flex;
+  align-items: center;
+}
+.logement .host-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.logement .host-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+.logement .tags {
+  display: flex;
+  gap: 20px;
+}
+.logement .tags .tag {
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: white;
+  padding: 5px 15px;
+}
+.logement .tags .tag p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.logement .dropdowns {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=logement.css.map */

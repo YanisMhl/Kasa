@@ -1,0 +1,29 @@
+@import '../utils/global';
+@import '../utils/variables';
+@import '../components/header';
+@import '../components/footer';
+
+.error {
+    display: flex;
+    flex-direction: column;
+    gap: 139px;
+    align-items: center;
+    color: $main-color;
+    h1 {
+        font-size: 288px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.error-link {
+    text-decoration: none;
+    color: $main-color;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 139px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

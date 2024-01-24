@@ -1,5 +1,6 @@
 import Banner from '../../components/Banner';
 import Dropdown from '../../components/Dropdown';
+import '../../css/a-propos.css';
 
 function APropos() {
     const contentTab = ["Climatisation", "Wi-fi", "Cuisine", "Espace de travail"];

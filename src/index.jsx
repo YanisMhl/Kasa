@@ -9,8 +9,6 @@ import Home from './pages/Home';
 import APropos from './pages/A-propos';
 import Error from './pages/Error';
 
-import './css/home.css';
-import './css/a-propos.css';
 
 console.log(Header);
 

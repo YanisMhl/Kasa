@@ -2,6 +2,7 @@ import Banner from '../../components/Banner';
 import { useState, useEffect } from 'react';
 import { getLogements } from '../../services/get_data';
 import Card from '../../components/Card';
+import '../../css/home.css';
 
 function Home() {
     const [logements, setLogements] = useState([]);

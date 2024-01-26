@@ -22,7 +22,7 @@ function Logement() {
             <h1>Chargement..</h1>
         );
     }
-
+    
     return (
         <div className="logement">
             <Carousel id={logementId}/>

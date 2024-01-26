@@ -1,4 +1,4 @@
-function Banner({ title, background }) {
+function Banner({ children, background }) {
     return (
         <div className="banner" style={{
             background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${background})`,
@@ -6,7 +6,7 @@ function Banner({ title, background }) {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center center',
             }}>
-            <h1>{title}</h1>
+            {children}
         </div>
     );
 }

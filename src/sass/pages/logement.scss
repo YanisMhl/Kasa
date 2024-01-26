@@ -2,7 +2,9 @@
 @import '../utils/variables';
 @import '../components/header';
 @import '../components/carousel';
+@import '../components/tag';
 @import '../components/footer';
+
 
 .logement {
     display: flex;
@@ -55,18 +57,6 @@
     .tags {
         display: flex;
         gap: 20px;
-
-        .tag {
-            border-radius: 10px;
-            background-color: $main-color;
-            color: white;
-            padding: 5px 15px;
-
-            p {
-                font-size: 14px;
-                font-weight: 500;
-            }
-        }
     }
 
     .dropdowns {

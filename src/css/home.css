@@ -32,6 +32,9 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .banner h1 {
   width: 100%;

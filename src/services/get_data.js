@@ -9,7 +9,6 @@ export async function getSingleLogement(id) {
   const data = await response.json();
   const result = data.find((element) => element.id === id);
   if (result) {
-    console.log(result);
     return result;
   } else {
     throw new Error();

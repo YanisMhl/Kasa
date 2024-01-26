@@ -1,6 +1,6 @@
 function Tag({ title }) {
     return (
-        <p className="tag">{title}</p>
+        <li className="tag">{title}</li>
     );
 }
 

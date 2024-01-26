@@ -38,11 +38,11 @@ function Logement() {
                     </div>
                 </div>
                 <div className="info-row-2">
-                    <div className="tags">
+                    <ul className="tags">
                         {logementInfo.tags.map((tag, index) => (
                             <Tag title={tag} key={index} />
                         ))}
-                    </div>
+                    </ul>
                     <div className="ratings">
                         {Array(5).fill().map((_, index) => (
                             <FontAwesomeIcon key={index} size="2x" icon={index + 1 <= parseInt(logementInfo.rating) ? solidStar : regularStar} />

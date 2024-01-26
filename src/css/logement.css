@@ -51,6 +51,15 @@
   font-weight: 500;
 }
 
+.tag {
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: white;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -114,16 +123,8 @@ footer p {
 .logement .tags {
   display: flex;
   gap: 20px;
-}
-.logement .tags .tag {
-  border-radius: 10px;
-  background-color: #FF6060;
-  color: white;
-  padding: 5px 15px;
-}
-.logement .tags .tag p {
-  font-size: 14px;
-  font-weight: 500;
+  list-style: none;
+  padding: 0;
 }
 .logement .dropdowns {
   display: flex;

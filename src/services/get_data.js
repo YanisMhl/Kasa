@@ -4,17 +4,6 @@ export async function getLogements() {
   return result;
 }
 
-export async function getPictures(id) {
-  const response = await fetch("/data/logements.json");
-  const data = await response.json();
-  const result = data.find((element) => element.id === id);
-  if (result) {
-    return result.pictures;
-  } else {
-    throw new Error();
-  }
-}
-
 export async function getSingleLogement(id) {
   const response = await fetch("/data/logements.json");
   const data = await response.json();

@@ -32,6 +32,9 @@
   min-width: 1240px;
   min-height: 680px;
   position: relative;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
 }
 .carousel .arrows {
   color: white;

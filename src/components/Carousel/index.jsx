@@ -24,11 +24,7 @@ function Carousel({ pictures }) {
 
     return (
         <div className="carousel" style={{
-            background: `url(${pictures[pictureIndex]})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center center'
-            }}>
+            background: `url(${pictures[pictureIndex]})`}}>
             <div className="arrows">
                 <FontAwesomeIcon icon={faChevronLeft} size="6x" className="arrow-left" onClick={() => changePictureIndex('left')}/>
                 <FontAwesomeIcon icon={faChevronRight} size="6x" className="arrow-right" onClick={() => changePictureIndex('right')}/>

@@ -22,16 +22,22 @@ function Carousel({ pictures }) {
         }
     }
 
-    return (
-        <div className="carousel" style={{
-            background: `url(${pictures[pictureIndex]})`}}>
-            <div className="arrows">
-                <FontAwesomeIcon icon={faChevronLeft} size="6x" className="arrow-left" onClick={() => changePictureIndex('left')}/>
-                <FontAwesomeIcon icon={faChevronRight} size="6x" className="arrow-right" onClick={() => changePictureIndex('right')}/>
+    if (pictures.length > 1) {
+        return (
+            <div className="carousel" style={{background: `url(${pictures[pictureIndex]})`}}>
+                <div className="arrows">
+                    <FontAwesomeIcon icon={faChevronLeft} size="6x" className="arrow-left" onClick={() => changePictureIndex('left')}/>
+                    <FontAwesomeIcon icon={faChevronRight} size="6x" className="arrow-right" onClick={() => changePictureIndex('right')}/>
+                </div>
+                <p>{`${pictureIndex + 1}/${pictures.length}`}</p>
             </div>
-            <p>{`${pictureIndex + 1}/${pictures.length}`}</p>
-        </div>
-    );
+        );
+    }
+    else {
+        return (
+        <div className="carousel" style={{background: `url(${pictures[pictureIndex]})`}} />
+        );
+    }
 }
 
 export default Carousel;

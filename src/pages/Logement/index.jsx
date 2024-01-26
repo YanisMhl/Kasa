@@ -25,7 +25,7 @@ function Logement() {
     
     return (
         <div className="logement">
-            <Carousel id={logementId}/>
+            <Carousel pictures={logementInfo.pictures}/>
             <div className="info">
                 <div className="info-row-1">
                     <div className="title">

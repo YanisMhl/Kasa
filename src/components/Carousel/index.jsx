@@ -3,13 +3,8 @@ import { getPictures } from "../../services/get_data";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-function Carousel({ id }) {
-    const [pictures, setPictures] = useState([]);
+function Carousel({ pictures }) {
     const [pictureIndex, setPictureIndex ] = useState(0);
-
-    useEffect(() => {
-        getPictures(id).then((response) => setPictures(response));
-    }, []);
 
     function changePictureIndex(arrow) {
         if (arrow === 'left') {

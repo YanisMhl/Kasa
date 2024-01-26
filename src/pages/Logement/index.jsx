@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 import Dropdown from "../../components/Dropdown";
 import Tag from "../../components/Tag";
@@ -12,9 +12,15 @@ import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
 function Logement() {
     const { logementId } = useParams();
     const [logementInfo, setLogementInfo] = useState({});
+    const navigate = useNavigate();
 
     useEffect(() => {
-        getSingleLogement(logementId).then((data) => setLogementInfo(data));
+        getSingleLogement(logementId)
+        .then((data) => setLogementInfo(data))
+        .catch((err) => {
+            console.log(err);
+            navigate("/*");
+        });
     }, []);
 
     if (!logementInfo.host) {

@@ -56,8 +56,14 @@ function Logement() {
                     </div>
                 </div>
                 <div className="dropdowns">
-                    <Dropdown title="Description" content={[logementInfo.description]} />
-                    <Dropdown title="Equipements" content={logementInfo.equipments} />
+                    <Dropdown title="Description">
+                        <p>{logementInfo.description}</p>
+                    </Dropdown>
+                    <Dropdown title="Equipements">
+                        {logementInfo.equipments.map((eq, index) => (
+                            <p key={index}>{eq}</p>
+                        ))}
+                    </Dropdown>
                 </div>
             </div>
         </div>

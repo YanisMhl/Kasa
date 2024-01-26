@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
-function Dropdown({ title, content, size = 'medium'}) {
+function Dropdown({ title, children, size = 'medium'}) {
     const [open, setOpen] = useState(false);
     let dropdownWidth = 580;
     if (size !== 'medium') {
@@ -20,11 +20,7 @@ function Dropdown({ title, content, size = 'medium'}) {
             </div>
             <div className={`dropdown-content ${open ? 'slides' : ''}`}
             style={{width: dropdownWidth}}>
-                {typeof(content) === String ? <p>{content}</p> :
-                content.map((item, index) => (
-                    <p key={`dropdown-item-${index}`}
-                    className="dropdown-item">{item}</p>
-                ))}
+                {children}
             </div>
         </div>
     );

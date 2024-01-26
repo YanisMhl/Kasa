@@ -132,4 +132,7 @@ footer p {
 .logement .dropdowns {
   display: flex;
   justify-content: space-between;
+}
+.logement .dropdown {
+  width: 580px;
 }/*# sourceMappingURL=logement.css.map */

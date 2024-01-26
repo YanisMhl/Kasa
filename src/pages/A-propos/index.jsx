@@ -6,28 +6,28 @@ function APropos() {
     return (
         <div className='a-propos'>
             <Banner background={'/a-propos-banner-img.png'}/>
-            <Dropdown title="Fiabilité" size='large'>
+            <Dropdown title="Fiabilité">
                 <p>
                     Les annonces postées sur Kasa garantissent une fiabilité totale.
                     Les photos sont conformes aux logements, et toutes les informations
                     sont régulièrement vérifiées par nos équipes.
                     </p>
             </Dropdown>
-            <Dropdown title="Respect" size='large'>
+            <Dropdown title="Respect">
                 <p>
                     La bienveillance fait partie des valeurs fondatrices de Kasa.
                     Tout comportement discriminatoire ou de pertubation du voisinage
                     entraînera une exclusion de notre plateforme.
                 </p>
             </Dropdown>
-            <Dropdown title="Service" size='large'>
+            <Dropdown title="Service">
                 <p>
                     La bienveillance fait partie des valeurs fondatrices de Kasa.
                     Tout comportement discriminatoire ou de pertubation du voisinage
                     entraînera une exclusion de notre plateforme.
                 </p>
             </Dropdown>
-            <Dropdown title="Sécurité" size='large'>
+            <Dropdown title="Sécurité">
                 <p>
                     La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes
                     que pour les voyageurs, chaque logement correspond aux critères

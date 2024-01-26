@@ -2,12 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
-function Dropdown({ title, children, size = 'medium'}) {
+function Dropdown({ title, children }) {
     const [open, setOpen] = useState(false);
-    let dropdownWidth = 580;
-    if (size !== 'medium') {
-         dropdownWidth = 1020;
-    }
+
     const toggleDropdown = () => {
         setOpen(!open);
     }
@@ -18,8 +15,7 @@ function Dropdown({ title, children, size = 'medium'}) {
                 <p>{title}</p>
                 <FontAwesomeIcon icon={faChevronUp} className={`dropdown-icon ${open ? 'rotate' : ''}`} size='xl' onClick={toggleDropdown} />
             </div>
-            <div className={`dropdown-content ${open ? 'slides' : ''}`}
-            style={{width: dropdownWidth}}>
+            <div className={`dropdown-content ${open ? 'slides' : ''}`}>
                 {children}
             </div>
         </div>

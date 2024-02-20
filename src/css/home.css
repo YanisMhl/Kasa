@@ -60,6 +60,7 @@
   width: 340px;
   height: 340px;
   border-radius: 20px;
+  background-size: contain;
   text-decoration: none;
   cursor: pointer;
 }

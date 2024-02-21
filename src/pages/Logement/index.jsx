@@ -19,7 +19,7 @@ function Logement() {
         .then((data) => setLogementInfo(data))
         .catch((err) => {
             console.log(err);
-            navigate("/*");
+            navigate("/logement-not-found");
         });
     }, []);
 

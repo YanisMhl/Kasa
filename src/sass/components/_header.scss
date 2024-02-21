@@ -4,15 +4,30 @@
   align-items: center;
   padding: 50px;
 
+  @include mobile {
+    img {
+      width: 145px;
+      height: 45px;
+    }
+    padding: 25px;
+  }
+
   nav {
     display: flex;
     gap: 50px;
+
+    @include mobile {
+      gap: 25px;
+    }
 
     & > * {
       color: $main-color;
       text-decoration: none;
       font-size: 24px;
       font-weight: 500;
+      @include mobile {
+        font-size: 12px;
+      }
     }
 
     .underline {

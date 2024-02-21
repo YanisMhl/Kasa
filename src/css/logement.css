@@ -10,15 +10,34 @@
   align-items: center;
   padding: 50px;
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 25px;
+  }
+  .header img {
+    width: 145px;
+    height: 45px;
+  }
+}
 .header nav {
   display: flex;
   gap: 50px;
+}
+@media (max-width: 768px) {
+  .header nav {
+    gap: 25px;
+  }
 }
 .header nav > * {
   color: #FF6060;
   text-decoration: none;
   font-size: 24px;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .header nav > * {
+    font-size: 12px;
+  }
 }
 .header nav .underline {
   text-decoration: underline;
@@ -72,6 +91,11 @@ footer {
   padding: 70px 464px 30px 464px;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  footer {
+    padding: 65px 120px 65px 120px;
+  }
+}
 footer img {
   width: 122px;
   height: 40px;
@@ -80,6 +104,12 @@ footer p {
   color: white;
   font-size: 24px;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 .logement {

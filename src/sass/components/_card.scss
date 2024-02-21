@@ -6,6 +6,14 @@
     background: $bg-color;
     border-radius: 25px;
     padding: 50px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        background: 0;
+        padding: 0;
+    }
 }
 
 .card {

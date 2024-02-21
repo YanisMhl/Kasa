@@ -6,6 +6,10 @@ footer {
     padding: 70px 464px 30px 464px;
     gap: 30px;
 
+    @include mobile {
+        padding: 65px 120px 65px 120px;
+    }
+
     img {
         width: 122px;
         height: 40px;
@@ -15,5 +19,10 @@ footer {
         color: white;
         font-size: 24px;
         font-weight: 500;
+
+        @include mobile {
+            font-size: 12px;
+            text-align: center;
+        }
     }
 }

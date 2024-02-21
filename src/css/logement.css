@@ -30,11 +30,12 @@
   align-items: center;
   justify-content: flex-end;
   min-width: 1240px;
-  min-height: 680px;
+  min-height: 420px;
   position: relative;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
+  border-radius: 25px;
 }
 .carousel .arrows {
   color: white;

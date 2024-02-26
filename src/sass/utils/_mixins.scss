@@ -3,3 +3,21 @@
         @content;
     }
 }
+
+@mixin tablette() {
+    @media (min-width: 769px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin wrapper() {
+    max-width: 1440px;
+    margin: auto;
+}
+
+@mixin flex($direction: row, $justify: normal, $align: normal) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -5,15 +5,22 @@
 @import '../components/footer';
 
 .error {
-    display: flex;
-    flex-direction: column;
-    gap: 139px;
-    align-items: center;
+    @include flex(column, normal, center);
+    @include wrapper();
     color: $main-color;
+    text-align: center;
+    gap: 139px;
+    padding: 20px;
     h1 {
-        font-size: 288px;
         font-weight: 700;
         text-align: center;
+        font-size: 288px;
+    }
+    @include mobile {
+        gap: 113px;
+        h1 {
+            font-size: 96px;
+        }
     }
 }
 

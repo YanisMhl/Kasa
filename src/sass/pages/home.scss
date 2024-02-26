@@ -7,7 +7,33 @@
 @import '../components/footer';
 
 .home {
+    @include wrapper();
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+    background: $bg-color;
+    border-radius: 25px;
+    padding: 50px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        background: 0;
+        padding: 0;
+    }
+
+    @include tablette {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

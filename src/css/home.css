@@ -45,24 +45,21 @@
 
 .banner {
   display: flex;
-  width: 1240px;
+  width: 100%;
   height: 220px;
   border-radius: 25px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
 @media (max-width: 768px) {
   .banner {
-    width: 355px;
     height: 111px;
   }
 }
 .banner h1 {
-  width: 100%;
   text-align: center;
   color: white;
   font-size: 48px;
@@ -76,29 +73,9 @@
   }
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 50px;
-  background: #F6F6F6;
-  border-radius: 25px;
-  padding: 50px;
-}
-@media (max-width: 768px) {
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 0;
-    background: 0;
-    padding: 0;
-  }
-}
-
 .card {
   display: flex;
   align-items: flex-end;
-  width: 340px;
   height: 340px;
   border-radius: 20px;
   background-size: contain;
@@ -112,13 +89,18 @@
   font-size: 18px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .card {
+    height: 255px;
+  }
+}
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: black;
-  padding: 70px 464px 30px 464px;
+  padding: 65px 0 29px;
   gap: 30px;
 }
 @media (max-width: 768px) {
@@ -146,4 +128,32 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+  background: #F6F6F6;
+  border-radius: 25px;
+  padding: 50px;
+}
+@media (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    background: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=home.css.map */

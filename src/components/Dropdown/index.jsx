@@ -11,9 +11,9 @@ function Dropdown({ title, children }) {
 
     return (
         <div className="dropdown">
-            <div className="dropdown-title">
-                <p>{title}</p>
-                <FontAwesomeIcon icon={faChevronUp} className={`dropdown-icon ${open ? 'rotate' : ''}`} size='xl' onClick={toggleDropdown} />
+            <div className="dropdown-title" onClick={toggleDropdown}>
+                <p>{title}</p> {/*h3*/}
+                <FontAwesomeIcon icon={faChevronUp} className={`dropdown-icon ${open ? 'rotate' : ''}`} size='xl' />
             </div>
             <div className={`dropdown-content ${open ? 'slides' : ''}`}>
                 {children}

@@ -132,13 +132,25 @@ footer p {
   display: flex;
   justify-content: space-between;
 }
+.logement .title {
+  font-weight: 500;
+}
 .logement .title h1 {
   font-size: 36px;
-  font-weight: 500;
+}
+.logement .title h2 {
+  color: #000;
+  font-size: 18px;
 }
 .logement .title p {
   font-size: 18px;
-  font-weight: 500;
+}
+.logement .ratings {
+  display: flex;
+  gap: 10px;
+}
+.logement .ratings .regular-star {
+  color: #E3E3E3;
 }
 .logement .host {
   display: flex;

@@ -51,7 +51,7 @@ function Logement() {
                     </ul>
                     <div className="ratings">
                         {Array(5).fill().map((_, index) => (
-                            <FontAwesomeIcon key={index} size="2x" icon={index + 1 <= parseInt(logementInfo.rating) ? solidStar : regularStar} />
+                            <FontAwesomeIcon key={index} size="2x" icon={solidStar} className={index + 1 <= parseInt(logementInfo.rating) ? "solid-star" : "regular-star"} />
                         ))}
                     </div>
                 </div>

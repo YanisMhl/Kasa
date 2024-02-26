@@ -28,8 +28,11 @@
     gap: 25px;
   }
 }
+.header nav > .active {
+  text-decoration: underline;
+}
 .header nav > * {
-  color: #FF6060;
+  color: #000;
   text-decoration: none;
   font-size: 24px;
   font-weight: 500;
@@ -38,9 +41,6 @@
   .header nav > * {
     font-size: 12px;
   }
-}
-.header nav .underline {
-  text-decoration: underline;
 }
 
 .banner {
@@ -125,13 +125,13 @@ footer p {
 }
 
 .home {
+  max-width: 1440px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: 20px;
-  max-width: 1440px;
-  margin: auto;
 }
 
 .card-container {

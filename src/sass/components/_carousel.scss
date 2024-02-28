@@ -11,6 +11,11 @@
     background-position: center center !important;
     border-radius: 25px;
 
+    @include mobile {
+        min-width: 335px;
+        min-height: 255px;
+    }
+
     .arrows {
         color: white;
         width: 95%;

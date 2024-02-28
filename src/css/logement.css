@@ -56,6 +56,12 @@
   background-position: center center !important;
   border-radius: 25px;
 }
+@media (max-width: 768px) {
+  .carousel {
+    min-width: 335px;
+    min-height: 255px;
+  }
+}
 .carousel .arrows {
   color: white;
   width: 95%;
@@ -126,11 +132,15 @@ footer p {
   gap: 30px;
   margin-top: 30px;
   color: #FF6060;
-  width: 1240px;
 }
 .logement .info-row-1, .logement .info-row-2 {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .logement .info-row-1, .logement .info-row-2 {
+    flex-direction: column;
+  }
 }
 .logement .title {
   font-weight: 500;
@@ -138,9 +148,19 @@ footer p {
 .logement .title h1 {
   font-size: 36px;
 }
+@media (max-width: 768px) {
+  .logement .title h1 {
+    font-size: 18px;
+  }
+}
 .logement .title h2 {
   color: #000;
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  .logement .title h2 {
+    font-size: 14px;
+  }
 }
 .logement .title p {
   font-size: 18px;
@@ -175,6 +195,12 @@ footer p {
 .logement .dropdowns {
   display: flex;
   justify-content: space-between;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .logement .dropdowns {
+    flex-direction: column;
+  }
 }
 .logement .dropdown {
   width: 580px;

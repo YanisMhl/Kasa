@@ -17,22 +17,42 @@
 
     .info {
         display: flex;
+        flex-direction: column;
         gap: 30px;
         margin-top: 30px;
         color: $main-color;
     }
-    .info-row-1, .info-row-2 {
+    .info-columns {
         display: flex;
         justify-content: space-between;
+        gap: 10px;
         @include mobile {
             flex-direction: column;
+        }
+        @include mobile {
+            margin: 10px;
+        }
+    }
+
+    .info-column-1, .info-column-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .info-column-2 {
+        align-items: flex-end;
+        @include mobile {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 
     .title {
-        font-weight: 500;
         h1 {
             font-size: 36px;
+            font-weight: 500;
             @include mobile {
                 font-size: 18px;
             }
@@ -40,12 +60,14 @@
         h2 {
             color: #000;
             font-size: 18px;
+            font-weight: 500;
             @include mobile {
                 font-size: 14px;
             }
         }
         p {
             font-size: 18px;
+            font-weight: 500;
         }
     }
 
@@ -55,6 +77,10 @@
         .regular-star {
             color: #E3E3E3;
         }
+
+        > * {
+            height: 18px;
+        }
     }
 
     .host {
@@ -63,6 +89,9 @@
         &-name {
             font-size: 18px;
             font-weight: 500;
+            @include mobile {
+                font-size: 12px;
+            }
         }
 
         &-picture {
@@ -70,7 +99,12 @@
             height: 64px;
             border-radius: 100%;
             margin-left: 10px;
+            @include mobile {
+                width: 32px;
+                height: 32px;
+            }
         }
+
     }
 
     .tags {
@@ -86,10 +120,15 @@
         gap: 50px;
         @include mobile {
             flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
     }
 
     .dropdown {
         width: 580px;
+        @include mobile {
+            width: 335px;
+        }
     }
 }

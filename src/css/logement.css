@@ -88,6 +88,11 @@
   font-size: 14px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+  }
+}
 
 footer {
   display: flex;
@@ -128,24 +133,44 @@ footer p {
 }
 .logement .info {
   display: flex;
+  flex-direction: column;
   gap: 30px;
   margin-top: 30px;
   color: #FF6060;
 }
-.logement .info-row-1, .logement .info-row-2 {
+.logement .info-columns {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 @media (max-width: 768px) {
-  .logement .info-row-1, .logement .info-row-2 {
+  .logement .info-columns {
     flex-direction: column;
   }
 }
-.logement .title {
-  font-weight: 500;
+@media (max-width: 768px) {
+  .logement .info-columns {
+    margin: 10px;
+  }
+}
+.logement .info-column-1, .logement .info-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.logement .info-column-2 {
+  align-items: flex-end;
+}
+@media (max-width: 768px) {
+  .logement .info-column-2 {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .logement .title h1 {
   font-size: 36px;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .logement .title h1 {
@@ -155,6 +180,7 @@ footer p {
 .logement .title h2 {
   color: #000;
   font-size: 18px;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .logement .title h2 {
@@ -163,6 +189,7 @@ footer p {
 }
 .logement .title p {
   font-size: 18px;
+  font-weight: 500;
 }
 .logement .ratings {
   display: flex;
@@ -170,6 +197,9 @@ footer p {
 }
 .logement .ratings .regular-star {
   color: #E3E3E3;
+}
+.logement .ratings > * {
+  height: 18px;
 }
 .logement .host {
   display: flex;
@@ -179,11 +209,22 @@ footer p {
   font-size: 18px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .logement .host-name {
+    font-size: 12px;
+  }
+}
 .logement .host-picture {
   width: 64px;
   height: 64px;
   border-radius: 100%;
   margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .logement .host-picture {
+    width: 32px;
+    height: 32px;
+  }
 }
 .logement .tags {
   display: flex;
@@ -199,8 +240,15 @@ footer p {
 @media (max-width: 768px) {
   .logement .dropdowns {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }
 .logement .dropdown {
   width: 580px;
+}
+@media (max-width: 768px) {
+  .logement .dropdown {
+    width: 335px;
+  }
 }/*# sourceMappingURL=logement.css.map */
